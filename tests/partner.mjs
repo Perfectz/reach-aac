@@ -1,0 +1,15 @@
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import AxeBuilder from '@axe-core/playwright';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{
+ const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>{localStorage.setItem('reach-welcomed','1');window.audioLog=[];window.SpeechSynthesisUtterance=class{constructor(text){this.text=text;}};Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>['en-US','ar','th','zh','hi','es'].map(lang=>({lang,localService:true})),cancel:()=>{},speak:u=>audioLog.push({text:u.text,lang:u.lang}),addEventListener:()=>{}}});});
+ await page.goto('http://localhost:4173');await page.locator('#settings').click();await page.locator('#communication-languages').click();
+ await page.locator('[data-language-setting=partnerLanguage][data-language-value=ar]').click();await page.locator('[data-language-setting=speechLanguage][data-language-value=es]').click();await page.locator('#communication-languages-done').click();
+ await page.locator('[data-phrase=yes]').click();assert.equal(await page.locator('#message').textContent(),'Yes');assert.equal(await page.locator('#message-secondary').textContent(),'نعم');assert.equal(await page.evaluate(()=>audioLog.at(-1).lang),'es');
+ await page.locator('#partner-view').click();assert.equal(await page.locator('#partner-translation').textContent(),'نعم');const before=await page.evaluate(()=>audioLog.length);await page.locator('#partner-speak').click();assert.equal(await page.evaluate(()=>audioLog.at(-1).lang),'ar');assert.equal(await page.evaluate(()=>audioLog.length),before+1);
+ assert.deepEqual((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations.map(v=>v.id),[]);await page.screenshot({path:'artifacts/partner-display.png'});await page.locator('#partner-back').click();await page.reload();
+ assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('reach-settings')).speechLanguage),'es');
+ await page.locator('#write-message').click();await page.locator('#compose-text').fill('My unique message');await page.locator('#compose-speak').click();assert.equal(await page.evaluate(()=>audioLog.length),0);await page.locator('#compose-close').click();await page.locator('#partner-view').click();assert.equal(await page.locator('#partner-translation').textContent(),'Translation not provided');assert.equal(await page.locator('#partner-speak').isDisabled(),true);await page.locator('#partner-back').click();
+ for(const width of [320,390,1280]){await page.setViewportSize({width,height:844});await page.waitForTimeout(250);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);}
+ assert.deepEqual(errors,[]);console.log('PASS independent board/display/voice languages, partner speech, missing translation, persistence, accessibility and widths');
+}finally{await browser.close();}

@@ -1,0 +1,43 @@
+// Repair messages are authored translations, never inferred from camera movement.
+const strings = {
+  editPack:['Edit this phrase pack','编辑此短语集','इस वाक्य समूह को बदलें','Editar estas frases','تعديل مجموعة العبارات','แก้ไขชุดข้อความนี้'],
+  packHint:['Choose a position to replace or hide its message. Other positions stay unchanged. Yes and No stay first. Changes apply only when you save.','选择一个位置以替换或隐藏消息。其他位置保持不变。是和否始终在前。保存后更改才会生效。','संदेश बदलने या छिपाने के लिए स्थान चुनें। दूसरे स्थान नहीं बदलेंगे। हाँ और नहीं पहले रहेंगे। सहेजने पर ही बदलाव लागू होंगे।','Elige una posición para cambiar u ocultar su mensaje. Las demás no cambian. Sí y No siguen primero. Los cambios se aplican al guardar.','اختر موضعاً لاستبدال رسالته أو إخفائها. تبقى المواضع الأخرى كما هي. نعم ولا أولاً دائماً. تُطبّق التغييرات عند الحفظ فقط.','เลือกตำแหน่งเพื่อเปลี่ยนหรือซ่อนข้อความ ตำแหน่งอื่นจะไม่เปลี่ยน ใช่และไม่อยู่ก่อนเสมอ การเปลี่ยนแปลงจะมีผลเมื่อบันทึก'],
+  emptySlot:['Empty position','空位','खाली स्थान','Posición vacía','موضع فارغ','ตำแหน่งว่าง'],
+  addSlot:['Add a position','添加位置','स्थान जोड़ें','Añadir posición','إضافة موضع','เพิ่มตำแหน่ง'],
+  hideSlot:['Leave this position empty','将此位置留空','यह स्थान खाली रखें','Dejar esta posición vacía','ترك هذا الموضع فارغاً','เว้นตำแหน่งนี้ว่าง'],
+  restorePack:['Restore original pack','恢复原始短语集','मूल समूह वापस लाएँ','Restaurar frases originales','استعادة المجموعة الأصلية','คืนค่าชุดข้อความเดิม'],
+  applyPack:['Save phrase pack','保存短语集','वाक्य समूह सहेजें','Guardar frases','حفظ مجموعة العبارات','บันทึกชุดข้อความ'],
+  discardPack:['Discard changes','放弃更改','बदलाव छोड़ें','Descartar cambios','تجاهل التغييرات','ยกเลิกการเปลี่ยนแปลง'],
+  rest:['Take a break','休息一下','आराम करें','Descansar','استراحة','พักสักครู่'],
+  resting:['Communication is resting','沟通已暂停','बातचीत रुकी हुई है','Comunicación en descanso','التواصل متوقف للاستراحة','พักการสื่อสาร'],
+  restCamera:['Camera stays on so you can resume with your movement. No messages are selected during this break.','摄像头保持开启，方便用动作恢复。休息时不会选择消息。','कैमरा चालू रहता है ताकि आप गतिविधि से फिर शुरू कर सकें। आराम के दौरान संदेश नहीं चुने जाते।','La cámara sigue encendida para reanudar con tu movimiento. Durante el descanso no se seleccionan mensajes.','تبقى الكاميرا قيد التشغيل لتستأنف بحركتك. لا تُختار رسائل أثناء الاستراحة.','กล้องยังเปิดอยู่เพื่อให้ใช้การเคลื่อนไหวเลือกต่อได้ ระหว่างพักจะไม่เลือกข้อความ'],
+  restNoCamera:['No messages are selected during this break. Select Resume when you are ready.','休息时不会选择消息。准备好后选择继续。','आराम के दौरान संदेश नहीं चुने जाते। तैयार होने पर फिर शुरू करें चुनें।','Durante el descanso no se seleccionan mensajes. Elige Reanudar cuando estés listo.','لا تُختار رسائل أثناء الاستراحة. اختر الاستئناف عندما تكون جاهزاً.','ระหว่างพักจะไม่เลือกข้อความ เมื่อพร้อมให้เลือกดำเนินต่อ'],
+  cameraOff:['Camera off · open input setup to start','摄像头已关闭 · 请打开输入设置','कैमरा बंद · शुरू करने के लिए इनपुट सेटअप खोलें','Cámara apagada · abre los ajustes de entrada','الكاميرا متوقفة · افتح إعدادات الإدخال','กล้องปิด · เปิดการตั้งค่าการเลือกเพื่อเริ่ม'],
+  trackingLost:['Movement not visible · selection paused','无法看到动作 · 选择已暂停','गतिविधि दिखाई नहीं दे रही · चयन रुका है','Movimiento no visible · selección pausada','الحركة غير ظاهرة · الاختيار متوقف','ไม่เห็นการเคลื่อนไหว · หยุดการเลือกชั่วคราว'],
+  trackingReady:['Movement visible · ready to select','动作可见 · 可以选择','गतिविधि दिखाई दे रही है · चयन के लिए तैयार','Movimiento visible · listo para seleccionar','الحركة ظاهرة · جاهز للاختيار','เห็นการเคลื่อนไหว · พร้อมเลือก'],
+  calibrateFirst:['Open input setup to calibrate','打开输入设置进行校准','कैलिब्रेशन के लिए इनपुट सेटअप खोलें','Abre los ajustes para calibrar','افتح إعدادات الإدخال للمعايرة','เปิดการตั้งค่าการเลือกเพื่อปรับเทียบ'],
+  turnOff:['Turn camera off','关闭摄像头','कैमरा बंद करें','Apagar cámara','إيقاف الكاميرا','ปิดกล้อง'],
+  previous: ['Previous page','上一页','पिछला पृष्ठ','Página anterior','الصفحة السابقة','หน้าก่อน'],
+  next: ['Next page','下一页','अगला पृष्ठ','Página siguiente','الصفحة التالية','หน้าถัดไป'],
+  topics: ['Topics','话题','विषय','Temas','المواضيع','หัวข้อ'],
+  stopSpeaking: ['Stop speaking','停止朗读','बोलना बंद करें','Dejar de hablar','إيقاف الكلام','หยุดพูด'],
+  wrong: ['Wrong selection','选错了','गलत चयन','Selección incorrecta','اختيار خاطئ','เลือกผิด'],
+  wait: ['Please wait','请稍等','कृपया रुकें','Espera, por favor','انتظر من فضلك','กรุณารอสักครู่'],
+  unsure: ['Not sure','不确定','पक्का नहीं','No estoy seguro/a','لست متأكداً','ไม่แน่ใจ'],
+  correction: ['That was a wrong selection. It is not what I meant.','刚才选错了。那不是我的意思。','वह गलत चयन था। मेरा वह मतलब नहीं था।','Esa selección fue incorrecta. No era lo que quería decir.','كان ذلك اختياراً خاطئاً. ليس هذا ما قصدته.','เมื่อกี้เลือกผิด ไม่ใช่สิ่งที่ฉันต้องการบอก'],
+  waiting: ['Please give me time to answer.','请给我时间回答。','कृपया मुझे जवाब देने का समय दें।','Dame tiempo para responder, por favor.','أعطني وقتاً للإجابة من فضلك.','กรุณาให้เวลาฉันตอบ'],
+  uncertain: ['I am not sure.','我不确定。','मुझे पक्का नहीं है।','No estoy seguro/a.','لست متأكداً.','ฉันไม่แน่ใจ'],
+  review: ['Review before speaking','朗读前确认','बोलने से पहले जाँचें','Revisar antes de hablar','المراجعة قبل الكلام','ตรวจสอบก่อนพูด'],
+  reviewHint: ['Choose a message, then select Speak now. Correction and Help speak immediately.','选择消息后，再选择立即朗读。纠正和求助会立即朗读。','संदेश चुनें, फिर अभी बोलें चुनें। सुधार और मदद तुरंत बोले जाते हैं।','Elige un mensaje y luego Hablar ahora. Corregir y pedir ayuda se dicen inmediatamente.','اختر رسالة ثم تكلّم الآن. التصحيح وطلب المساعدة يُنطقان فوراً.','เลือกข้อความ แล้วเลือกพูดตอนนี้ การแก้ไขและขอความช่วยเหลือจะพูดทันที'],
+  speakNow: ['Speak now','立即朗读','अभी बोलें','Hablar ahora','تكلّم الآن','พูดตอนนี้'],
+  preview: ['Preview · not spoken','预览 · 尚未朗读','पूर्वावलोकन · अभी नहीं बोला','Vista previa · sin pronunciar','معاينة · لم تُنطق','ตัวอย่าง · ยังไม่ได้พูด'],
+  selected: ['Selected message','已选消息','चुना गया संदेश','Mensaje seleccionado','الرسالة المختارة','ข้อความที่เลือก'],
+  stopped: ['Speech stopped','朗读已停止','बोलना रोक दिया गया','Voz detenida','تم إيقاف الكلام','หยุดพูดแล้ว'],
+  tools: ['Conversation controls','对话控制','बातचीत के नियंत्रण','Controles de conversación','أدوات المحادثة','ควบคุมการสนทนา'],
+};
+const codes = ['en','zh','hi','es','ar','th'];
+export function communicationLabel(key, language) { return strings[key]?.[codes.indexOf(language)] || strings[key]?.[0] || key; }
+export const repairPhrases = Object.fromEntries([['wrong','correction'],['wait','waiting'],['unsure','uncertain']].map(([id,key])=>[id,{
+  id:`repair-${id}`, en:strings[key][0], th:strings[key][5],
+  translations:Object.fromEntries(codes.map((code,i)=>[code,strings[key][i]])), icon:'MessageCircle', tone:'neutral',
+}]));

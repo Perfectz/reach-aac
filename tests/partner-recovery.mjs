@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{
+ const page=await browser.newPage();await page.addInitScript(()=>{window.audio=[];window.cancels=0;window.SpeechSynthesisUtterance=function(text){this.text=text;};speechSynthesis.getVoices=()=>['en','es','ar'].map(lang=>({lang,localService:true}));speechSynthesis.speak=u=>audio.push({text:u.text,lang:u.lang});speechSynthesis.cancel=()=>cancels++;});
+ await page.goto('http://localhost:4173');await page.locator('#welcome-touch').click();await page.locator('[data-phrase=yes]').click();await page.locator('#settings').click();await page.locator('#communication-languages').click();const before=await page.evaluate(()=>({settings:localStorage.getItem('reach-settings'),cancels}));const secondary=await page.locator('#message-secondary').textContent();
+ await page.evaluate(()=>{window.originalWrite=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='reach-profiles-v1')throw new DOMException('Full','QuotaExceededError');return originalWrite.call(this,k,v);};});
+ for(const [key,value] of [['partnerLanguage','ar'],['speechLanguage','es']]){await page.locator(`[data-language-setting=${key}][data-language-value=${value}]`).click();assert.equal(await page.locator(`[data-language-setting=${key}][data-language-value=${value}]`).getAttribute('aria-pressed'),'false');}
+ assert.equal(await page.evaluate(()=>localStorage.getItem('reach-settings')),before.settings);assert.equal(await page.evaluate(()=>cancels),before.cancels);assert.equal(await page.locator('#message-secondary').textContent(),secondary);
+ await page.locator('#communication-languages-done').click();await page.locator('[data-phrase=no]').click();assert.equal(await page.evaluate(()=>audio.at(-1).lang),'en');
+ await page.evaluate(()=>Storage.prototype.setItem=originalWrite);await page.locator('#settings').click();await page.locator('#communication-languages').click();await page.locator('[data-language-setting=partnerLanguage][data-language-value=ar]').click();await page.locator('[data-language-setting=speechLanguage][data-language-value=es]').click();await page.locator('#communication-languages-done').click();await page.reload();await page.locator('[data-phrase=yes]').click();assert.equal(await page.locator('#message-secondary').textContent(),'نعم');assert.equal(await page.evaluate(()=>audio.at(-1).lang),'es');
+ console.log('PASS rejected partner/voice changes preserve selection, display and speech; successful retry survives reload with Arabic display and Spanish output');
+}finally{await browser.close();}

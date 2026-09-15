@@ -1,0 +1,14 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{
+ const page=await browser.newPage();await page.goto('http://localhost:4173');await page.locator('#welcome-touch').click();await page.locator('#settings').click();const original=await page.evaluate(()=>localStorage.getItem('reach-settings'));
+ await page.evaluate(()=>{window.originalWrite=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='reach-profiles-v1')throw new DOMException('Full','QuotaExceededError');return originalWrite.call(this,k,v);};});
+ await page.locator('[data-lang=ar]').click();assert.equal(await page.locator('html').getAttribute('lang'),'en');await page.locator('[data-profile=family]').click();assert.equal(await page.locator('[data-profile=homeCare]').evaluate(e=>e.classList.contains('selected')),true);await page.locator('#review-toggle').click();assert.equal(await page.locator('#review-toggle').getAttribute('aria-pressed'),'false');
+ await page.locator('#quick-advanced').click();
+ for(const [id,choice,expected] of [['setting-language','ar','en'],['setting-layout','simple','full'],['setting-vocabulary','family','homeCare']]){await page.locator(`#${id}-choice-${choice}`).click();assert.equal(await page.locator('#'+id).inputValue(),expected);assert.equal(await page.locator(`#${id}-choice-${expected}`).getAttribute('aria-pressed'),'true');}
+ for(const [id,value] of [['setting-voice',true],['setting-contrast',false]]){await page.locator('#'+id+'-toggle').click();assert.equal(await page.locator('#'+id).isChecked(),value);assert.equal(await page.locator('#'+id+'-toggle').getAttribute('aria-pressed'),String(value));}
+ assert.equal(await page.evaluate(()=>localStorage.getItem('reach-settings')),original);await page.locator('#settings-done').click();await page.locator('#settings').click();assert.equal(await page.locator('[data-lang=en]').evaluate(e=>e.classList.contains('selected')),true);
+ await page.evaluate(()=>Storage.prototype.setItem=originalWrite);await page.locator('[data-profile=family]').click();await page.locator('#review-toggle').click();await page.locator('[data-lang=ar]').click();assert.equal(await page.locator('html').getAttribute('lang'),'ar');await page.locator('#quick-done').click();await page.reload();await page.locator('#settings').click();assert.equal(await page.locator('html').getAttribute('dir'),'rtl');assert.equal(await page.locator('[data-profile=family]').evaluate(e=>e.classList.contains('selected')),true);assert.equal(await page.locator('#review-toggle').getAttribute('aria-pressed'),'true');
+ console.log('PASS rejected quick/advanced preferences retain live controls and saved setup; successful language/preset/review retry survives reload');
+}finally{await browser.close();}

@@ -1,0 +1,11 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});const context=await browser.newContext();const page=await context.newPage();
+await page.goto('http://localhost:4173/?input=eye&update=eye-entry');
+assert.equal(await page.locator('[value="eye"]').isChecked(),true);assert.equal(await page.locator('#eye-start').isVisible(),true);assert.ok(await page.locator('#eye-start').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}));
+await page.locator('#close-dialog').click();await page.locator('#eye-shortcut').click();assert.equal(await page.locator('[value="eye"]').isChecked(),true);await page.locator('#close-dialog').click();
+await page.setViewportSize({width:320,height:740});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await page.waitForFunction(()=>document.querySelector('#offline-status').textContent.includes('Saved'));
+await page.evaluate(async()=>{const cache=await caches.open((await caches.keys()).find(k=>k.startsWith('reach-')));await cache.put('/',new Response('<html><body>Old cached app</body></html>',{headers:{'Content-Type':'text/html'}}));});
+await page.goto('http://localhost:4173/');await page.locator('#eye-shortcut').waitFor();
+await context.setOffline(true);await page.reload();await page.locator('#eye-shortcut').waitFor();
+console.log('PASS direct eye setup link, visible main-screen shortcut, 320px layout, online stale-cache bypass, offline fallback');await browser.close();

@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+try{
+ const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage();page.setDefaultTimeout(15000);
+ await page.goto('http://localhost:4173');await page.locator('#welcome-touch').click();await page.locator('#settings').click();await page.locator('#quick-advanced').click();await page.locator('#open-phrases').click();await page.locator('#create-personal-phrase').click();await page.locator('#edit-text-en').fill('I love my family');await page.locator('#edit-symbol').click();
+ assert.equal(await page.locator('.symbol-grid button').count(),4);assert.equal(await page.locator('.symbol-grid svg').count(),4);assert.deepEqual((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations.map(v=>v.id),[]);await page.screenshot({path:'artifacts/phrase-symbol-picker.png'});
+ await page.locator('#phrase-symbol-Heart').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#edit-text-en').inputValue(),'I love my family');assert.match(await page.locator('#edit-symbol').textContent(),/Love/);await page.locator('#edit-cancel').click();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('reach-settings')).phrases.length),0);
+ await page.locator('#create-personal-phrase').click();await page.locator('#edit-text-en').fill('I love my family');await page.locator('#edit-symbol').click();await page.locator('#symbol-next').click();await page.locator('#symbol-next').click();assert.equal(await page.locator('#symbol-next').isDisabled(),true);await page.locator('#symbol-previous').click();await page.locator('#symbol-previous').click();await page.locator('#phrase-symbol-Heart').click();await page.locator('#edit-save').click();
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('reach-settings')).phrases[0]);assert.equal(saved.icon,'Heart');await page.locator('#phrases-done').click();await page.reload();await page.locator('#board-topics').click();await page.locator('#modal [data-category=mine]').click();assert.equal(await page.locator(`[data-phrase="${saved.id}"] [data-lucide=heart]`).count(),1);assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('reach-profiles-v1')).people[0].settings.phrases[0].icon),'Heart');
+ console.log('PASS symbol rendering, keyboard choice, paging, draft discard, saved symbol reload and narrow accessibility');
+}finally{await browser.close();}
