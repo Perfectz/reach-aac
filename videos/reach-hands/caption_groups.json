@@ -1,0 +1,2848 @@
+{
+  "total_duration_s": 131.282,
+  "width": 1920,
+  "height": 1080,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 0.36,
+      "text": "A small",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "A",
+          "start": 0,
+          "end": 0.14
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "small",
+          "start": 0.14,
+          "end": 0.36
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 0.36,
+      "end": 1.52,
+      "text": "movement can carry",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "movement",
+          "start": 0.36,
+          "end": 0.84
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "can",
+          "start": 0.84,
+          "end": 1.14
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "carry",
+          "start": 1.14,
+          "end": 1.52
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 1.52,
+      "end": 2.76,
+      "text": "an important message.",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "an",
+          "start": 1.52,
+          "end": 1.7
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "important",
+          "start": 1.7,
+          "end": 1.94
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "message.",
+          "start": 1.94,
+          "end": 2.64
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 3.4,
+      "end": 3.9,
+      "text": "Reach is",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "Reach",
+          "start": 3.4,
+          "end": 3.54
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "is",
+          "start": 3.54,
+          "end": 3.9
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 3.9,
+      "end": 4.48,
+      "text": "a free,",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "a",
+          "start": 3.9,
+          "end": 4
+        },
+        {
+          "id": "caption-word-4-1",
+          "text": "free,",
+          "start": 4,
+          "end": 4.36
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 4.62,
+      "end": 6.06,
+      "text": "open source communication",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "open",
+          "start": 4.62,
+          "end": 5.16
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "source",
+          "start": 5.16,
+          "end": 5.54
+        },
+        {
+          "id": "caption-word-5-2",
+          "text": "communication",
+          "start": 5.54,
+          "end": 6.06
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 6.06,
+      "end": 7.18,
+      "text": "app built with",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "app",
+          "start": 6.06,
+          "end": 6.64
+        },
+        {
+          "id": "caption-word-6-1",
+          "text": "built",
+          "start": 6.64,
+          "end": 6.96
+        },
+        {
+          "id": "caption-word-6-2",
+          "text": "with",
+          "start": 6.96,
+          "end": 7.18
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 7.18,
+      "end": 8.3,
+      "text": "AI assistance.",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "AI",
+          "start": 7.18,
+          "end": 7.56
+        },
+        {
+          "id": "caption-word-7-1",
+          "text": "assistance.",
+          "start": 7.56,
+          "end": 8.18
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 9.02,
+      "end": 9.42,
+      "text": "It turns",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "It",
+          "start": 9.02,
+          "end": 9.16
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "turns",
+          "start": 9.16,
+          "end": 9.42
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 9.42,
+      "end": 10.52,
+      "text": "a compatible webcam",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "a",
+          "start": 9.42,
+          "end": 9.62
+        },
+        {
+          "id": "caption-word-9-1",
+          "text": "compatible",
+          "start": 9.62,
+          "end": 10.08
+        },
+        {
+          "id": "caption-word-9-2",
+          "text": "webcam",
+          "start": 10.08,
+          "end": 10.52
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 10.52,
+      "end": 11.28,
+      "text": "and a",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "and",
+          "start": 10.52,
+          "end": 11.2
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "a",
+          "start": 11.2,
+          "end": 11.28
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 1,
+      "start": 11.28,
+      "end": 12.04,
+      "text": "browser into",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "browser",
+          "start": 11.28,
+          "end": 11.5
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "into",
+          "start": 11.5,
+          "end": 12.04
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 1,
+      "start": 12.04,
+      "end": 12.44,
+      "text": "a way",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "a",
+          "start": 12.04,
+          "end": 12.24
+        },
+        {
+          "id": "caption-word-12-1",
+          "text": "way",
+          "start": 12.24,
+          "end": 12.44
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 1,
+      "start": 12.44,
+      "end": 12.96,
+      "text": "to select",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "to",
+          "start": 12.44,
+          "end": 12.66
+        },
+        {
+          "id": "caption-word-13-1",
+          "text": "select",
+          "start": 12.66,
+          "end": 12.96
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 1,
+      "start": 12.96,
+      "end": 14,
+      "text": "words and have",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "words",
+          "start": 12.96,
+          "end": 13.36
+        },
+        {
+          "id": "caption-word-14-1",
+          "text": "and",
+          "start": 13.36,
+          "end": 13.78
+        },
+        {
+          "id": "caption-word-14-2",
+          "text": "have",
+          "start": 13.78,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 1,
+      "start": 14,
+      "end": 14.56,
+      "text": "them spoken.",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "them",
+          "start": 14,
+          "end": 14.16
+        },
+        {
+          "id": "caption-word-15-1",
+          "text": "spoken.",
+          "start": 14.16,
+          "end": 14.44
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 15.469,
+      "end": 15.969,
+      "text": "Start with",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "Start",
+          "start": 15.469,
+          "end": 15.749
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "with",
+          "start": 15.749,
+          "end": 15.969
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 15.969,
+      "end": 16.809,
+      "text": "hand movement.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "hand",
+          "start": 15.969,
+          "end": 16.249
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "movement.",
+          "start": 16.249,
+          "end": 16.689
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 2,
+      "start": 17.349,
+      "end": 18.529,
+      "text": "Position the camera,",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Position",
+          "start": 17.349,
+          "end": 17.689
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "the",
+          "start": 17.689,
+          "end": 18.009
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "camera,",
+          "start": 18.009,
+          "end": 18.409
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 2,
+      "start": 18.769,
+      "end": 19.069,
+      "text": "set a",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "set",
+          "start": 18.769,
+          "end": 18.989
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "a",
+          "start": 18.989,
+          "end": 19.069
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 2,
+      "start": 19.069,
+      "end": 20.429,
+      "text": "comfortable resting point,",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "comfortable",
+          "start": 19.069,
+          "end": 19.449
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "resting",
+          "start": 19.449,
+          "end": 19.829
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "point,",
+          "start": 19.829,
+          "end": 20.309
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 2,
+      "start": 20.589,
+      "end": 20.849,
+      "text": "and adjust",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "and",
+          "start": 20.589,
+          "end": 20.649
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "adjust",
+          "start": 20.649,
+          "end": 20.849
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 2,
+      "start": 20.849,
+      "end": 22.369,
+      "text": "sensitivity to the movement",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "sensitivity",
+          "start": 20.849,
+          "end": 21.429
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "to",
+          "start": 21.429,
+          "end": 21.949
+        },
+        {
+          "id": "caption-word-22-2",
+          "text": "the",
+          "start": 21.949,
+          "end": 22.029
+        },
+        {
+          "id": "caption-word-22-3",
+          "text": "movement",
+          "start": 22.029,
+          "end": 22.369
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 2,
+      "start": 22.369,
+      "end": 23.269,
+      "text": "you can repeat.",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "you",
+          "start": 22.369,
+          "end": 22.649
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "can",
+          "start": 22.649,
+          "end": 22.789
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "repeat.",
+          "start": 22.789,
+          "end": 23.149
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 2,
+      "start": 23.989,
+      "end": 24.249,
+      "text": "A visible",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "A",
+          "start": 23.989,
+          "end": 24.009
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "visible",
+          "start": 24.009,
+          "end": 24.249
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 2,
+      "start": 24.249,
+      "end": 25.549,
+      "text": "pointer shows where",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "pointer",
+          "start": 24.249,
+          "end": 24.729
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "shows",
+          "start": 24.729,
+          "end": 25.209
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "where",
+          "start": 25.209,
+          "end": 25.549
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 2,
+      "start": 25.549,
+      "end": 26.249,
+      "text": "you are aiming.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "you",
+          "start": 25.549,
+          "end": 25.729
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "are",
+          "start": 25.729,
+          "end": 25.849
+        },
+        {
+          "id": "caption-word-26-2",
+          "text": "aiming.",
+          "start": 25.849,
+          "end": 26.129
+        }
+      ]
+    },
+    {
+      "id": "caption-group-27",
+      "frame": 2,
+      "start": 26.909,
+      "end": 27.329,
+      "text": "Hold over",
+      "words": [
+        {
+          "id": "caption-word-27-0",
+          "text": "Hold",
+          "start": 26.909,
+          "end": 26.949
+        },
+        {
+          "id": "caption-word-27-1",
+          "text": "over",
+          "start": 26.949,
+          "end": 27.329
+        }
+      ]
+    },
+    {
+      "id": "caption-group-28",
+      "frame": 2,
+      "start": 27.329,
+      "end": 27.689,
+      "text": "a large",
+      "words": [
+        {
+          "id": "caption-word-28-0",
+          "text": "a",
+          "start": 27.329,
+          "end": 27.429
+        },
+        {
+          "id": "caption-word-28-1",
+          "text": "large",
+          "start": 27.429,
+          "end": 27.689
+        }
+      ]
+    },
+    {
+      "id": "caption-group-29",
+      "frame": 2,
+      "start": 27.689,
+      "end": 28.829,
+      "text": "phrase to select",
+      "words": [
+        {
+          "id": "caption-word-29-0",
+          "text": "phrase",
+          "start": 27.689,
+          "end": 28.229
+        },
+        {
+          "id": "caption-word-29-1",
+          "text": "to",
+          "start": 28.229,
+          "end": 28.549
+        },
+        {
+          "id": "caption-word-29-2",
+          "text": "select",
+          "start": 28.549,
+          "end": 28.829
+        }
+      ]
+    },
+    {
+      "id": "caption-group-30",
+      "frame": 2,
+      "start": 28.829,
+      "end": 29.209,
+      "text": "it.",
+      "words": [
+        {
+          "id": "caption-word-30-0",
+          "text": "it.",
+          "start": 28.829,
+          "end": 29.089
+        }
+      ]
+    },
+    {
+      "id": "caption-group-31",
+      "frame": 2,
+      "start": 29.629,
+      "end": 30.669,
+      "text": "No keyboard key",
+      "words": [
+        {
+          "id": "caption-word-31-0",
+          "text": "No",
+          "start": 29.629,
+          "end": 29.829
+        },
+        {
+          "id": "caption-word-31-1",
+          "text": "keyboard",
+          "start": 29.829,
+          "end": 30.209
+        },
+        {
+          "id": "caption-word-31-2",
+          "text": "key",
+          "start": 30.209,
+          "end": 30.669
+        }
+      ]
+    },
+    {
+      "id": "caption-group-32",
+      "frame": 2,
+      "start": 30.669,
+      "end": 31.249,
+      "text": "needs to",
+      "words": [
+        {
+          "id": "caption-word-32-0",
+          "text": "needs",
+          "start": 30.669,
+          "end": 30.949
+        },
+        {
+          "id": "caption-word-32-1",
+          "text": "to",
+          "start": 30.949,
+          "end": 31.249
+        }
+      ]
+    },
+    {
+      "id": "caption-group-33",
+      "frame": 2,
+      "start": 31.249,
+      "end": 31.769,
+      "text": "be held.",
+      "words": [
+        {
+          "id": "caption-word-33-0",
+          "text": "be",
+          "start": 31.249,
+          "end": 31.349
+        },
+        {
+          "id": "caption-word-33-1",
+          "text": "held.",
+          "start": 31.349,
+          "end": 31.649
+        }
+      ]
+    },
+    {
+      "id": "caption-group-34",
+      "frame": 2,
+      "start": 32.489,
+      "end": 33.629,
+      "text": "This animation illustrates",
+      "words": [
+        {
+          "id": "caption-word-34-0",
+          "text": "This",
+          "start": 32.489,
+          "end": 32.489
+        },
+        {
+          "id": "caption-word-34-1",
+          "text": "animation",
+          "start": 32.489,
+          "end": 33.029
+        },
+        {
+          "id": "caption-word-34-2",
+          "text": "illustrates",
+          "start": 33.029,
+          "end": 33.629
+        }
+      ]
+    },
+    {
+      "id": "caption-group-35",
+      "frame": 2,
+      "start": 33.629,
+      "end": 34.609,
+      "text": "the interaction.",
+      "words": [
+        {
+          "id": "caption-word-35-0",
+          "text": "the",
+          "start": 33.629,
+          "end": 34.149
+        },
+        {
+          "id": "caption-word-35-1",
+          "text": "interaction.",
+          "start": 34.149,
+          "end": 34.489
+        }
+      ]
+    },
+    {
+      "id": "caption-group-36",
+      "frame": 2,
+      "start": 35.269,
+      "end": 35.429,
+      "text": "It is",
+      "words": [
+        {
+          "id": "caption-word-36-0",
+          "text": "It",
+          "start": 35.269,
+          "end": 35.349
+        },
+        {
+          "id": "caption-word-36-1",
+          "text": "is",
+          "start": 35.349,
+          "end": 35.429
+        }
+      ]
+    },
+    {
+      "id": "caption-group-37",
+      "frame": 2,
+      "start": 35.429,
+      "end": 35.789,
+      "text": "not a",
+      "words": [
+        {
+          "id": "caption-word-37-0",
+          "text": "not",
+          "start": 35.429,
+          "end": 35.689
+        },
+        {
+          "id": "caption-word-37-1",
+          "text": "a",
+          "start": 35.689,
+          "end": 35.789
+        }
+      ]
+    },
+    {
+      "id": "caption-group-38",
+      "frame": 2,
+      "start": 35.789,
+      "end": 36.649,
+      "text": "clinical test.",
+      "words": [
+        {
+          "id": "caption-word-38-0",
+          "text": "clinical",
+          "start": 35.789,
+          "end": 36.049
+        },
+        {
+          "id": "caption-word-38-1",
+          "text": "test.",
+          "start": 36.049,
+          "end": 36.529
+        }
+      ]
+    },
+    {
+      "id": "caption-group-39",
+      "frame": 3,
+      "start": 37.53,
+      "end": 38.01,
+      "text": "Choose phrases",
+      "words": [
+        {
+          "id": "caption-word-39-0",
+          "text": "Choose",
+          "start": 37.53,
+          "end": 37.75
+        },
+        {
+          "id": "caption-word-39-1",
+          "text": "phrases",
+          "start": 37.75,
+          "end": 38.01
+        }
+      ]
+    },
+    {
+      "id": "caption-group-40",
+      "frame": 3,
+      "start": 38.01,
+      "end": 39.23,
+      "text": "for home care,",
+      "words": [
+        {
+          "id": "caption-word-40-0",
+          "text": "for",
+          "start": 38.01,
+          "end": 38.49
+        },
+        {
+          "id": "caption-word-40-1",
+          "text": "home",
+          "start": 38.49,
+          "end": 38.71
+        },
+        {
+          "id": "caption-word-40-2",
+          "text": "care,",
+          "start": 38.71,
+          "end": 39.11
+        }
+      ]
+    },
+    {
+      "id": "caption-group-41",
+      "frame": 3,
+      "start": 39.37,
+      "end": 40.27,
+      "text": "hospital care,",
+      "words": [
+        {
+          "id": "caption-word-41-0",
+          "text": "hospital",
+          "start": 39.37,
+          "end": 39.73
+        },
+        {
+          "id": "caption-word-41-1",
+          "text": "care,",
+          "start": 39.73,
+          "end": 40.15
+        }
+      ]
+    },
+    {
+      "id": "caption-group-42",
+      "frame": 3,
+      "start": 40.49,
+      "end": 41.93,
+      "text": "or family conversation.",
+      "words": [
+        {
+          "id": "caption-word-42-0",
+          "text": "or",
+          "start": 40.49,
+          "end": 40.57
+        },
+        {
+          "id": "caption-word-42-1",
+          "text": "family",
+          "start": 40.57,
+          "end": 41.11
+        },
+        {
+          "id": "caption-word-42-2",
+          "text": "conversation.",
+          "start": 41.11,
+          "end": 41.81
+        }
+      ]
+    },
+    {
+      "id": "caption-group-43",
+      "frame": 3,
+      "start": 42.87,
+      "end": 43.13,
+      "text": "Use more",
+      "words": [
+        {
+          "id": "caption-word-43-0",
+          "text": "Use",
+          "start": 42.87,
+          "end": 42.89
+        },
+        {
+          "id": "caption-word-43-1",
+          "text": "more",
+          "start": 42.89,
+          "end": 43.13
+        }
+      ]
+    },
+    {
+      "id": "caption-group-44",
+      "frame": 3,
+      "start": 43.13,
+      "end": 44.01,
+      "text": "choices on",
+      "words": [
+        {
+          "id": "caption-word-44-0",
+          "text": "choices",
+          "start": 43.13,
+          "end": 43.63
+        },
+        {
+          "id": "caption-word-44-1",
+          "text": "on",
+          "start": 43.63,
+          "end": 44.01
+        }
+      ]
+    },
+    {
+      "id": "caption-group-45",
+      "frame": 3,
+      "start": 44.01,
+      "end": 44.37,
+      "text": "a large",
+      "words": [
+        {
+          "id": "caption-word-45-0",
+          "text": "a",
+          "start": 44.01,
+          "end": 44.11
+        },
+        {
+          "id": "caption-word-45-1",
+          "text": "large",
+          "start": 44.11,
+          "end": 44.37
+        }
+      ]
+    },
+    {
+      "id": "caption-group-46",
+      "frame": 3,
+      "start": 44.37,
+      "end": 45.45,
+      "text": "screen and fewer",
+      "words": [
+        {
+          "id": "caption-word-46-0",
+          "text": "screen",
+          "start": 44.37,
+          "end": 44.93
+        },
+        {
+          "id": "caption-word-46-1",
+          "text": "and",
+          "start": 44.93,
+          "end": 45.19
+        },
+        {
+          "id": "caption-word-46-2",
+          "text": "fewer",
+          "start": 45.19,
+          "end": 45.45
+        }
+      ]
+    },
+    {
+      "id": "caption-group-47",
+      "frame": 3,
+      "start": 45.45,
+      "end": 46.39,
+      "text": "on a phone.",
+      "words": [
+        {
+          "id": "caption-word-47-0",
+          "text": "on",
+          "start": 45.45,
+          "end": 45.85
+        },
+        {
+          "id": "caption-word-47-1",
+          "text": "a",
+          "start": 45.85,
+          "end": 45.91
+        },
+        {
+          "id": "caption-word-47-2",
+          "text": "phone.",
+          "start": 45.91,
+          "end": 46.27
+        }
+      ]
+    },
+    {
+      "id": "caption-group-48",
+      "frame": 3,
+      "start": 47.25,
+      "end": 47.95,
+      "text": "Six languages,",
+      "words": [
+        {
+          "id": "caption-word-48-0",
+          "text": "Six",
+          "start": 47.25,
+          "end": 47.25
+        },
+        {
+          "id": "caption-word-48-1",
+          "text": "languages,",
+          "start": 47.25,
+          "end": 47.83
+        }
+      ]
+    },
+    {
+      "id": "caption-group-49",
+      "frame": 3,
+      "start": 48.41,
+      "end": 50.03,
+      "text": "selectable navigation and",
+      "words": [
+        {
+          "id": "caption-word-49-0",
+          "text": "selectable",
+          "start": 48.41,
+          "end": 49.01
+        },
+        {
+          "id": "caption-word-49-1",
+          "text": "navigation",
+          "start": 49.01,
+          "end": 49.33
+        },
+        {
+          "id": "caption-word-49-2",
+          "text": "and",
+          "start": 49.33,
+          "end": 50.03
+        }
+      ]
+    },
+    {
+      "id": "caption-group-50",
+      "frame": 3,
+      "start": 50.03,
+      "end": 51.09,
+      "text": "a rest control help",
+      "words": [
+        {
+          "id": "caption-word-50-0",
+          "text": "a rest",
+          "start": 50.03,
+          "end": 50.25
+        },
+        {
+          "id": "caption-word-50-1",
+          "text": "control",
+          "start": 50.25,
+          "end": 50.73
+        },
+        {
+          "id": "caption-word-50-2",
+          "text": "help",
+          "start": 50.73,
+          "end": 51.09
+        }
+      ]
+    },
+    {
+      "id": "caption-group-51",
+      "frame": 3,
+      "start": 51.09,
+      "end": 52.11,
+      "text": "adapt the board.",
+      "words": [
+        {
+          "id": "caption-word-51-0",
+          "text": "adapt",
+          "start": 51.09,
+          "end": 51.45
+        },
+        {
+          "id": "caption-word-51-1",
+          "text": "the",
+          "start": 51.45,
+          "end": 51.73
+        },
+        {
+          "id": "caption-word-51-2",
+          "text": "board.",
+          "start": 51.73,
+          "end": 51.99
+        }
+      ]
+    },
+    {
+      "id": "caption-group-52",
+      "frame": 3,
+      "start": 52.79,
+      "end": 53.09,
+      "text": "If pointing",
+      "words": [
+        {
+          "id": "caption-word-52-0",
+          "text": "If",
+          "start": 52.79,
+          "end": 52.81
+        },
+        {
+          "id": "caption-word-52-1",
+          "text": "pointing",
+          "start": 52.81,
+          "end": 53.09
+        }
+      ]
+    },
+    {
+      "id": "caption-group-53",
+      "frame": 3,
+      "start": 53.09,
+      "end": 54.05,
+      "text": "is difficult,",
+      "words": [
+        {
+          "id": "caption-word-53-0",
+          "text": "is",
+          "start": 53.09,
+          "end": 53.51
+        },
+        {
+          "id": "caption-word-53-1",
+          "text": "difficult,",
+          "start": 53.51,
+          "end": 53.93
+        }
+      ]
+    },
+    {
+      "id": "caption-group-54",
+      "frame": 3,
+      "start": 54.43,
+      "end": 54.73,
+      "text": "a motion",
+      "words": [
+        {
+          "id": "caption-word-54-0",
+          "text": "a",
+          "start": 54.43,
+          "end": 54.53
+        },
+        {
+          "id": "caption-word-54-1",
+          "text": "motion",
+          "start": 54.53,
+          "end": 54.73
+        }
+      ]
+    },
+    {
+      "id": "caption-group-55",
+      "frame": 3,
+      "start": 54.73,
+      "end": 56.09,
+      "text": "switch offers another",
+      "words": [
+        {
+          "id": "caption-word-55-0",
+          "text": "switch",
+          "start": 54.73,
+          "end": 55.23
+        },
+        {
+          "id": "caption-word-55-1",
+          "text": "offers",
+          "start": 55.23,
+          "end": 55.71
+        },
+        {
+          "id": "caption-word-55-2",
+          "text": "another",
+          "start": 55.71,
+          "end": 56.09
+        }
+      ]
+    },
+    {
+      "id": "caption-group-56",
+      "frame": 3,
+      "start": 56.09,
+      "end": 56.55,
+      "text": "route.",
+      "words": [
+        {
+          "id": "caption-word-56-0",
+          "text": "route.",
+          "start": 56.09,
+          "end": 56.43
+        }
+      ]
+    },
+    {
+      "id": "caption-group-57",
+      "frame": 4,
+      "start": 57.351,
+      "end": 57.891,
+      "text": "Reach's hand",
+      "words": [
+        {
+          "id": "caption-word-57-0",
+          "text": "Reach's",
+          "start": 57.351,
+          "end": 57.611
+        },
+        {
+          "id": "caption-word-57-1",
+          "text": "hand",
+          "start": 57.611,
+          "end": 57.891
+        }
+      ]
+    },
+    {
+      "id": "caption-group-58",
+      "frame": 4,
+      "start": 57.891,
+      "end": 59.211,
+      "text": "control costs zero",
+      "words": [
+        {
+          "id": "caption-word-58-0",
+          "text": "control",
+          "start": 57.891,
+          "end": 58.291
+        },
+        {
+          "id": "caption-word-58-1",
+          "text": "costs",
+          "start": 58.291,
+          "end": 58.611
+        },
+        {
+          "id": "caption-word-58-2",
+          "text": "zero",
+          "start": 58.611,
+          "end": 59.211
+        }
+      ]
+    },
+    {
+      "id": "caption-group-59",
+      "frame": 4,
+      "start": 59.211,
+      "end": 60.091,
+      "text": "for software.",
+      "words": [
+        {
+          "id": "caption-word-59-0",
+          "text": "for",
+          "start": 59.211,
+          "end": 59.511
+        },
+        {
+          "id": "caption-word-59-1",
+          "text": "software.",
+          "start": 59.511,
+          "end": 59.971
+        }
+      ]
+    },
+    {
+      "id": "caption-group-60",
+      "frame": 4,
+      "start": 60.771,
+      "end": 60.951,
+      "text": "You still",
+      "words": [
+        {
+          "id": "caption-word-60-0",
+          "text": "You",
+          "start": 60.771,
+          "end": 60.771
+        },
+        {
+          "id": "caption-word-60-1",
+          "text": "still",
+          "start": 60.771,
+          "end": 60.951
+        }
+      ]
+    },
+    {
+      "id": "caption-group-61",
+      "frame": 4,
+      "start": 60.951,
+      "end": 61.311,
+      "text": "need a",
+      "words": [
+        {
+          "id": "caption-word-61-0",
+          "text": "need",
+          "start": 60.951,
+          "end": 61.211
+        },
+        {
+          "id": "caption-word-61-1",
+          "text": "a",
+          "start": 61.211,
+          "end": 61.311
+        }
+      ]
+    },
+    {
+      "id": "caption-group-62",
+      "frame": 4,
+      "start": 61.311,
+      "end": 63.091,
+      "text": "compatible device and camera.",
+      "words": [
+        {
+          "id": "caption-word-62-0",
+          "text": "compatible",
+          "start": 61.311,
+          "end": 61.651
+        },
+        {
+          "id": "caption-word-62-1",
+          "text": "device",
+          "start": 61.651,
+          "end": 62.371
+        },
+        {
+          "id": "caption-word-62-2",
+          "text": "and",
+          "start": 62.371,
+          "end": 62.631
+        },
+        {
+          "id": "caption-word-62-3",
+          "text": "camera.",
+          "start": 62.631,
+          "end": 62.971
+        }
+      ]
+    },
+    {
+      "id": "caption-group-63",
+      "frame": 4,
+      "start": 63.811,
+      "end": 64.031,
+      "text": "Other free",
+      "words": [
+        {
+          "id": "caption-word-63-0",
+          "text": "Other",
+          "start": 63.811,
+          "end": 63.811
+        },
+        {
+          "id": "caption-word-63-1",
+          "text": "free",
+          "start": 63.811,
+          "end": 64.031
+        }
+      ]
+    },
+    {
+      "id": "caption-group-64",
+      "frame": 4,
+      "start": 64.031,
+      "end": 64.991,
+      "text": "tools exist.",
+      "words": [
+        {
+          "id": "caption-word-64-0",
+          "text": "tools",
+          "start": 64.031,
+          "end": 64.351
+        },
+        {
+          "id": "caption-word-64-1",
+          "text": "exist.",
+          "start": 64.351,
+          "end": 64.871
+        }
+      ]
+    },
+    {
+      "id": "caption-group-65",
+      "frame": 4,
+      "start": 65.651,
+      "end": 67.091,
+      "text": "NonMouse provides installed",
+      "words": [
+        {
+          "id": "caption-word-65-0",
+          "text": "NonMouse",
+          "start": 65.651,
+          "end": 66.051
+        },
+        {
+          "id": "caption-word-65-1",
+          "text": "provides",
+          "start": 66.051,
+          "end": 66.451
+        },
+        {
+          "id": "caption-word-65-2",
+          "text": "installed",
+          "start": 66.451,
+          "end": 67.091
+        }
+      ]
+    },
+    {
+      "id": "caption-group-66",
+      "frame": 4,
+      "start": 67.091,
+      "end": 68.571,
+      "text": "webcam mouse control.",
+      "words": [
+        {
+          "id": "caption-word-66-0",
+          "text": "webcam",
+          "start": 67.091,
+          "end": 67.551
+        },
+        {
+          "id": "caption-word-66-1",
+          "text": "mouse",
+          "start": 67.551,
+          "end": 68.011
+        },
+        {
+          "id": "caption-word-66-2",
+          "text": "control.",
+          "start": 68.011,
+          "end": 68.451
+        }
+      ]
+    },
+    {
+      "id": "caption-group-67",
+      "frame": 4,
+      "start": 69.331,
+      "end": 69.971,
+      "text": "Dedicated hand",
+      "words": [
+        {
+          "id": "caption-word-67-0",
+          "text": "Dedicated",
+          "start": 69.331,
+          "end": 69.591
+        },
+        {
+          "id": "caption-word-67-1",
+          "text": "hand",
+          "start": 69.591,
+          "end": 69.971
+        }
+      ]
+    },
+    {
+      "id": "caption-group-68",
+      "frame": 4,
+      "start": 69.971,
+      "end": 71.031,
+      "text": "hardware is another",
+      "words": [
+        {
+          "id": "caption-word-68-0",
+          "text": "hardware",
+          "start": 69.971,
+          "end": 70.311
+        },
+        {
+          "id": "caption-word-68-1",
+          "text": "is",
+          "start": 70.311,
+          "end": 70.791
+        },
+        {
+          "id": "caption-word-68-2",
+          "text": "another",
+          "start": 70.791,
+          "end": 71.031
+        }
+      ]
+    },
+    {
+      "id": "caption-group-69",
+      "frame": 4,
+      "start": 71.031,
+      "end": 71.671,
+      "text": "category.",
+      "words": [
+        {
+          "id": "caption-word-69-0",
+          "text": "category.",
+          "start": 71.031,
+          "end": 71.551
+        }
+      ]
+    },
+    {
+      "id": "caption-group-70",
+      "frame": 4,
+      "start": 72.431,
+      "end": 72.731,
+      "text": "Leap Motion",
+      "words": [
+        {
+          "id": "caption-word-70-0",
+          "text": "Leap",
+          "start": 72.431,
+          "end": 72.431
+        },
+        {
+          "id": "caption-word-70-1",
+          "text": "Motion",
+          "start": 72.431,
+          "end": 72.731
+        }
+      ]
+    },
+    {
+      "id": "caption-group-71",
+      "frame": 4,
+      "start": 72.731,
+      "end": 74.611,
+      "text": "Controller 2 launched at",
+      "words": [
+        {
+          "id": "caption-word-71-0",
+          "text": "Controller",
+          "start": 72.731,
+          "end": 73.291
+        },
+        {
+          "id": "caption-word-71-1",
+          "text": "2",
+          "start": 73.291,
+          "end": 73.831
+        },
+        {
+          "id": "caption-word-71-2",
+          "text": "launched",
+          "start": 73.831,
+          "end": 74.311
+        },
+        {
+          "id": "caption-word-71-3",
+          "text": "at",
+          "start": 74.311,
+          "end": 74.611
+        }
+      ]
+    },
+    {
+      "id": "caption-group-72",
+      "frame": 4,
+      "start": 74.611,
+      "end": 76.891,
+      "text": "$139 US dollars.",
+      "words": [
+        {
+          "id": "caption-word-72-0",
+          "text": "$139",
+          "start": 74.611,
+          "end": 75.551
+        },
+        {
+          "id": "caption-word-72-1",
+          "text": "US",
+          "start": 75.551,
+          "end": 76.311
+        },
+        {
+          "id": "caption-word-72-2",
+          "text": "dollars.",
+          "start": 76.311,
+          "end": 76.771
+        }
+      ]
+    },
+    {
+      "id": "caption-group-73",
+      "frame": 4,
+      "start": 77.631,
+      "end": 77.851,
+      "text": "That is",
+      "words": [
+        {
+          "id": "caption-word-73-0",
+          "text": "That",
+          "start": 77.631,
+          "end": 77.731
+        },
+        {
+          "id": "caption-word-73-1",
+          "text": "is",
+          "start": 77.731,
+          "end": 77.851
+        }
+      ]
+    },
+    {
+      "id": "caption-group-74",
+      "frame": 4,
+      "start": 77.851,
+      "end": 78.891,
+      "text": "a historical hardware",
+      "words": [
+        {
+          "id": "caption-word-74-0",
+          "text": "a",
+          "start": 77.851,
+          "end": 77.971
+        },
+        {
+          "id": "caption-word-74-1",
+          "text": "historical",
+          "start": 77.971,
+          "end": 78.371
+        },
+        {
+          "id": "caption-word-74-2",
+          "text": "hardware",
+          "start": 78.371,
+          "end": 78.891
+        }
+      ]
+    },
+    {
+      "id": "caption-group-75",
+      "frame": 4,
+      "start": 78.891,
+      "end": 79.591,
+      "text": "price,",
+      "words": [
+        {
+          "id": "caption-word-75-0",
+          "text": "price,",
+          "start": 78.891,
+          "end": 79.471
+        }
+      ]
+    },
+    {
+      "id": "caption-group-76",
+      "frame": 4,
+      "start": 79.851,
+      "end": 80.191,
+      "text": "not a",
+      "words": [
+        {
+          "id": "caption-word-76-0",
+          "text": "not",
+          "start": 79.851,
+          "end": 80.111
+        },
+        {
+          "id": "caption-word-76-1",
+          "text": "a",
+          "start": 80.111,
+          "end": 80.191
+        }
+      ]
+    },
+    {
+      "id": "caption-group-77",
+      "frame": 4,
+      "start": 80.191,
+      "end": 81.271,
+      "text": "current quote or",
+      "words": [
+        {
+          "id": "caption-word-77-0",
+          "text": "current",
+          "start": 80.191,
+          "end": 80.491
+        },
+        {
+          "id": "caption-word-77-1",
+          "text": "quote",
+          "start": 80.491,
+          "end": 80.851
+        },
+        {
+          "id": "caption-word-77-2",
+          "text": "or",
+          "start": 80.851,
+          "end": 81.271
+        }
+      ]
+    },
+    {
+      "id": "caption-group-78",
+      "frame": 4,
+      "start": 81.271,
+      "end": 81.771,
+      "text": "a complete",
+      "words": [
+        {
+          "id": "caption-word-78-0",
+          "text": "a",
+          "start": 81.271,
+          "end": 81.411
+        },
+        {
+          "id": "caption-word-78-1",
+          "text": "complete",
+          "start": 81.411,
+          "end": 81.771
+        }
+      ]
+    },
+    {
+      "id": "caption-group-79",
+      "frame": 4,
+      "start": 81.771,
+      "end": 83.151,
+      "text": "communication system.",
+      "words": [
+        {
+          "id": "caption-word-79-0",
+          "text": "communication",
+          "start": 81.771,
+          "end": 82.151
+        },
+        {
+          "id": "caption-word-79-1",
+          "text": "system.",
+          "start": 82.151,
+          "end": 83.031
+        }
+      ]
+    },
+    {
+      "id": "caption-group-80",
+      "frame": 5,
+      "start": 83.936,
+      "end": 84.756,
+      "text": "For eye control,",
+      "words": [
+        {
+          "id": "caption-word-80-0",
+          "text": "For",
+          "start": 83.936,
+          "end": 84.076
+        },
+        {
+          "id": "caption-word-80-1",
+          "text": "eye",
+          "start": 84.076,
+          "end": 84.256
+        },
+        {
+          "id": "caption-word-80-2",
+          "text": "control,",
+          "start": 84.256,
+          "end": 84.636
+        }
+      ]
+    },
+    {
+      "id": "caption-group-81",
+      "frame": 5,
+      "start": 85.076,
+      "end": 85.456,
+      "text": "a Spanish",
+      "words": [
+        {
+          "id": "caption-word-81-0",
+          "text": "a",
+          "start": 85.076,
+          "end": 85.136
+        },
+        {
+          "id": "caption-word-81-1",
+          "text": "Spanish",
+          "start": 85.136,
+          "end": 85.456
+        }
+      ]
+    },
+    {
+      "id": "caption-group-82",
+      "frame": 5,
+      "start": 85.456,
+      "end": 86.936,
+      "text": "retailer lists PCEye",
+      "words": [
+        {
+          "id": "caption-word-82-0",
+          "text": "retailer",
+          "start": 85.456,
+          "end": 85.836
+        },
+        {
+          "id": "caption-word-82-1",
+          "text": "lists",
+          "start": 85.836,
+          "end": 86.376
+        },
+        {
+          "id": "caption-word-82-2",
+          "text": "PCEye",
+          "start": 86.376,
+          "end": 86.936
+        }
+      ]
+    },
+    {
+      "id": "caption-group-83",
+      "frame": 5,
+      "start": 86.936,
+      "end": 88.056,
+      "text": "5 with TD",
+      "words": [
+        {
+          "id": "caption-word-83-0",
+          "text": "5",
+          "start": 86.936,
+          "end": 87.636
+        },
+        {
+          "id": "caption-word-83-1",
+          "text": "with",
+          "start": 87.636,
+          "end": 87.836
+        },
+        {
+          "id": "caption-word-83-2",
+          "text": "TD",
+          "start": 87.836,
+          "end": 88.056
+        }
+      ]
+    },
+    {
+      "id": "caption-group-84",
+      "frame": 5,
+      "start": 88.056,
+      "end": 90.296,
+      "text": "control at 2,365",
+      "words": [
+        {
+          "id": "caption-word-84-0",
+          "text": "control",
+          "start": 88.056,
+          "end": 88.656
+        },
+        {
+          "id": "caption-word-84-1",
+          "text": "at",
+          "start": 88.656,
+          "end": 88.936
+        },
+        {
+          "id": "caption-word-84-2",
+          "text": "2,365",
+          "start": 88.936,
+          "end": 90.296
+        }
+      ]
+    },
+    {
+      "id": "caption-group-85",
+      "frame": 5,
+      "start": 90.296,
+      "end": 91.176,
+      "text": "euros,",
+      "words": [
+        {
+          "id": "caption-word-85-0",
+          "text": "euros,",
+          "start": 90.296,
+          "end": 91.056
+        }
+      ]
+    },
+    {
+      "id": "caption-group-86",
+      "frame": 5,
+      "start": 91.356,
+      "end": 92.136,
+      "text": "including tax.",
+      "words": [
+        {
+          "id": "caption-word-86-0",
+          "text": "including",
+          "start": 91.356,
+          "end": 91.676
+        },
+        {
+          "id": "caption-word-86-1",
+          "text": "tax.",
+          "start": 91.676,
+          "end": 92.016
+        }
+      ]
+    },
+    {
+      "id": "caption-group-87",
+      "frame": 5,
+      "start": 92.796,
+      "end": 93.116,
+      "text": "The computer",
+      "words": [
+        {
+          "id": "caption-word-87-0",
+          "text": "The",
+          "start": 92.796,
+          "end": 92.856
+        },
+        {
+          "id": "caption-word-87-1",
+          "text": "computer",
+          "start": 92.856,
+          "end": 93.116
+        }
+      ]
+    },
+    {
+      "id": "caption-group-88",
+      "frame": 5,
+      "start": 93.116,
+      "end": 93.916,
+      "text": "is separate.",
+      "words": [
+        {
+          "id": "caption-word-88-0",
+          "text": "is",
+          "start": 93.116,
+          "end": 93.436
+        },
+        {
+          "id": "caption-word-88-1",
+          "text": "separate.",
+          "start": 93.436,
+          "end": 93.796
+        }
+      ]
+    },
+    {
+      "id": "caption-group-89",
+      "frame": 5,
+      "start": 94.636,
+      "end": 95.316,
+      "text": "OptiKey is",
+      "words": [
+        {
+          "id": "caption-word-89-0",
+          "text": "OptiKey",
+          "start": 94.636,
+          "end": 94.976
+        },
+        {
+          "id": "caption-word-89-1",
+          "text": "is",
+          "start": 94.976,
+          "end": 95.316
+        }
+      ]
+    },
+    {
+      "id": "caption-group-90",
+      "frame": 5,
+      "start": 95.316,
+      "end": 96.416,
+      "text": "free software for",
+      "words": [
+        {
+          "id": "caption-word-90-0",
+          "text": "free",
+          "start": 95.316,
+          "end": 95.516
+        },
+        {
+          "id": "caption-word-90-1",
+          "text": "software",
+          "start": 95.516,
+          "end": 95.956
+        },
+        {
+          "id": "caption-word-90-2",
+          "text": "for",
+          "start": 95.956,
+          "end": 96.416
+        }
+      ]
+    },
+    {
+      "id": "caption-group-91",
+      "frame": 5,
+      "start": 96.416,
+      "end": 97.536,
+      "text": "a compatible setup.",
+      "words": [
+        {
+          "id": "caption-word-91-0",
+          "text": "a",
+          "start": 96.416,
+          "end": 96.556
+        },
+        {
+          "id": "caption-word-91-1",
+          "text": "compatible",
+          "start": 96.556,
+          "end": 96.816
+        },
+        {
+          "id": "caption-word-91-2",
+          "text": "setup.",
+          "start": 96.816,
+          "end": 97.416
+        }
+      ]
+    },
+    {
+      "id": "caption-group-92",
+      "frame": 5,
+      "start": 98.236,
+      "end": 99.256,
+      "text": "Reach's webcam eye",
+      "words": [
+        {
+          "id": "caption-word-92-0",
+          "text": "Reach's",
+          "start": 98.236,
+          "end": 98.476
+        },
+        {
+          "id": "caption-word-92-1",
+          "text": "webcam",
+          "start": 98.476,
+          "end": 98.816
+        },
+        {
+          "id": "caption-word-92-2",
+          "text": "eye",
+          "start": 98.816,
+          "end": 99.256
+        }
+      ]
+    },
+    {
+      "id": "caption-group-93",
+      "frame": 5,
+      "start": 99.256,
+      "end": 99.756,
+      "text": "mode is",
+      "words": [
+        {
+          "id": "caption-word-93-0",
+          "text": "mode",
+          "start": 99.256,
+          "end": 99.496
+        },
+        {
+          "id": "caption-word-93-1",
+          "text": "is",
+          "start": 99.496,
+          "end": 99.756
+        }
+      ]
+    },
+    {
+      "id": "caption-group-94",
+      "frame": 5,
+      "start": 99.756,
+      "end": 100.696,
+      "text": "also free,",
+      "words": [
+        {
+          "id": "caption-word-94-0",
+          "text": "also",
+          "start": 99.756,
+          "end": 100.156
+        },
+        {
+          "id": "caption-word-94-1",
+          "text": "free,",
+          "start": 100.156,
+          "end": 100.576
+        }
+      ]
+    },
+    {
+      "id": "caption-group-95",
+      "frame": 5,
+      "start": 100.956,
+      "end": 101.696,
+      "text": "but experimental.",
+      "words": [
+        {
+          "id": "caption-word-95-0",
+          "text": "but",
+          "start": 100.956,
+          "end": 101.136
+        },
+        {
+          "id": "caption-word-95-1",
+          "text": "experimental.",
+          "start": 101.136,
+          "end": 101.576
+        }
+      ]
+    },
+    {
+      "id": "caption-group-96",
+      "frame": 5,
+      "start": 102.716,
+      "end": 103.896,
+      "text": "Dedicated systems provide",
+      "words": [
+        {
+          "id": "caption-word-96-0",
+          "text": "Dedicated",
+          "start": 102.716,
+          "end": 102.976
+        },
+        {
+          "id": "caption-word-96-1",
+          "text": "systems",
+          "start": 102.976,
+          "end": 103.516
+        },
+        {
+          "id": "caption-word-96-2",
+          "text": "provide",
+          "start": 103.516,
+          "end": 103.896
+        }
+      ]
+    },
+    {
+      "id": "caption-group-97",
+      "frame": 5,
+      "start": 103.896,
+      "end": 104.876,
+      "text": "different hardware,",
+      "words": [
+        {
+          "id": "caption-word-97-0",
+          "text": "different",
+          "start": 103.896,
+          "end": 104.436
+        },
+        {
+          "id": "caption-word-97-1",
+          "text": "hardware,",
+          "start": 104.436,
+          "end": 104.756
+        }
+      ]
+    },
+    {
+      "id": "caption-group-98",
+      "frame": 5,
+      "start": 105.296,
+      "end": 106.116,
+      "text": "computer access,",
+      "words": [
+        {
+          "id": "caption-word-98-0",
+          "text": "computer",
+          "start": 105.296,
+          "end": 105.596
+        },
+        {
+          "id": "caption-word-98-1",
+          "text": "access,",
+          "start": 105.596,
+          "end": 105.996
+        }
+      ]
+    },
+    {
+      "id": "caption-group-99",
+      "frame": 5,
+      "start": 106.256,
+      "end": 106.716,
+      "text": "and support.",
+      "words": [
+        {
+          "id": "caption-word-99-0",
+          "text": "and",
+          "start": 106.256,
+          "end": 106.436
+        },
+        {
+          "id": "caption-word-99-1",
+          "text": "support.",
+          "start": 106.436,
+          "end": 106.716
+        }
+      ]
+    },
+    {
+      "id": "caption-group-100",
+      "frame": 5,
+      "start": 106.716,
+      "end": 108.636,
+      "text": "These are not equivalent",
+      "words": [
+        {
+          "id": "caption-word-100-0",
+          "text": "These",
+          "start": 106.716,
+          "end": 107.636
+        },
+        {
+          "id": "caption-word-100-1",
+          "text": "are",
+          "start": 107.636,
+          "end": 107.936
+        },
+        {
+          "id": "caption-word-100-2",
+          "text": "not",
+          "start": 107.936,
+          "end": 108.156
+        },
+        {
+          "id": "caption-word-100-3",
+          "text": "equivalent",
+          "start": 108.156,
+          "end": 108.636
+        }
+      ]
+    },
+    {
+      "id": "caption-group-101",
+      "frame": 5,
+      "start": 108.636,
+      "end": 109.216,
+      "text": "packages.",
+      "words": [
+        {
+          "id": "caption-word-101-0",
+          "text": "packages.",
+          "start": 108.636,
+          "end": 109.096
+        }
+      ]
+    },
+    {
+      "id": "caption-group-102",
+      "frame": 6,
+      "start": 110.308,
+      "end": 110.608,
+      "text": "This is",
+      "words": [
+        {
+          "id": "caption-word-102-0",
+          "text": "This",
+          "start": 110.308,
+          "end": 110.488
+        },
+        {
+          "id": "caption-word-102-1",
+          "text": "is",
+          "start": 110.488,
+          "end": 110.608
+        }
+      ]
+    },
+    {
+      "id": "caption-group-103",
+      "frame": 6,
+      "start": 110.608,
+      "end": 112.348,
+      "text": "AI used with purpose,",
+      "words": [
+        {
+          "id": "caption-word-103-0",
+          "text": "AI",
+          "start": 110.608,
+          "end": 110.988
+        },
+        {
+          "id": "caption-word-103-1",
+          "text": "used",
+          "start": 110.988,
+          "end": 111.648
+        },
+        {
+          "id": "caption-word-103-2",
+          "text": "with",
+          "start": 111.648,
+          "end": 111.828
+        },
+        {
+          "id": "caption-word-103-3",
+          "text": "purpose,",
+          "start": 111.828,
+          "end": 112.228
+        }
+      ]
+    },
+    {
+      "id": "caption-group-104",
+      "frame": 6,
+      "start": 112.728,
+      "end": 113.728,
+      "text": "helping build useful",
+      "words": [
+        {
+          "id": "caption-word-104-0",
+          "text": "helping",
+          "start": 112.728,
+          "end": 113.008
+        },
+        {
+          "id": "caption-word-104-1",
+          "text": "build",
+          "start": 113.008,
+          "end": 113.368
+        },
+        {
+          "id": "caption-word-104-2",
+          "text": "useful",
+          "start": 113.368,
+          "end": 113.728
+        }
+      ]
+    },
+    {
+      "id": "caption-group-105",
+      "frame": 6,
+      "start": 113.728,
+      "end": 114.268,
+      "text": "tools,",
+      "words": [
+        {
+          "id": "caption-word-105-0",
+          "text": "tools,",
+          "start": 113.728,
+          "end": 114.268
+        }
+      ]
+    },
+    {
+      "id": "caption-group-106",
+      "frame": 6,
+      "start": 114.268,
+      "end": 115.348,
+      "text": "reducing barriers,",
+      "words": [
+        {
+          "id": "caption-word-106-0",
+          "text": "reducing",
+          "start": 114.268,
+          "end": 114.788
+        },
+        {
+          "id": "caption-word-106-1",
+          "text": "barriers,",
+          "start": 114.788,
+          "end": 115.348
+        }
+      ]
+    },
+    {
+      "id": "caption-group-107",
+      "frame": 6,
+      "start": 115.348,
+      "end": 115.948,
+      "text": "and sharing",
+      "words": [
+        {
+          "id": "caption-word-107-0",
+          "text": "and",
+          "start": 115.348,
+          "end": 115.688
+        },
+        {
+          "id": "caption-word-107-1",
+          "text": "sharing",
+          "start": 115.688,
+          "end": 115.948
+        }
+      ]
+    },
+    {
+      "id": "caption-group-108",
+      "frame": 6,
+      "start": 115.948,
+      "end": 116.628,
+      "text": "the source.",
+      "words": [
+        {
+          "id": "caption-word-108-0",
+          "text": "the",
+          "start": 115.948,
+          "end": 116.228
+        },
+        {
+          "id": "caption-word-108-1",
+          "text": "source.",
+          "start": 116.228,
+          "end": 116.508
+        }
+      ]
+    },
+    {
+      "id": "caption-group-109",
+      "frame": 6,
+      "start": 117.648,
+      "end": 117.888,
+      "text": "Camera tracking",
+      "words": [
+        {
+          "id": "caption-word-109-0",
+          "text": "Camera",
+          "start": 117.648,
+          "end": 117.648
+        },
+        {
+          "id": "caption-word-109-1",
+          "text": "tracking",
+          "start": 117.648,
+          "end": 117.888
+        }
+      ]
+    },
+    {
+      "id": "caption-group-110",
+      "frame": 6,
+      "start": 117.888,
+      "end": 118.968,
+      "text": "runs locally.",
+      "words": [
+        {
+          "id": "caption-word-110-0",
+          "text": "runs",
+          "start": 117.888,
+          "end": 118.388
+        },
+        {
+          "id": "caption-word-110-1",
+          "text": "locally.",
+          "start": 118.388,
+          "end": 118.848
+        }
+      ]
+    },
+    {
+      "id": "caption-group-111",
+      "frame": 6,
+      "start": 119.668,
+      "end": 119.968,
+      "text": "The person",
+      "words": [
+        {
+          "id": "caption-word-111-0",
+          "text": "The",
+          "start": 119.668,
+          "end": 119.688
+        },
+        {
+          "id": "caption-word-111-1",
+          "text": "person",
+          "start": 119.688,
+          "end": 119.968
+        }
+      ]
+    },
+    {
+      "id": "caption-group-112",
+      "frame": 6,
+      "start": 119.968,
+      "end": 121.248,
+      "text": "chooses the message.",
+      "words": [
+        {
+          "id": "caption-word-112-0",
+          "text": "chooses",
+          "start": 119.968,
+          "end": 120.448
+        },
+        {
+          "id": "caption-word-112-1",
+          "text": "the",
+          "start": 120.448,
+          "end": 120.768
+        },
+        {
+          "id": "caption-word-112-2",
+          "text": "message.",
+          "start": 120.768,
+          "end": 121.128
+        }
+      ]
+    },
+    {
+      "id": "caption-group-113",
+      "frame": 6,
+      "start": 122.048,
+      "end": 123.288,
+      "text": "Real-world testing with",
+      "words": [
+        {
+          "id": "caption-word-113-0",
+          "text": "Real-world",
+          "start": 122.048,
+          "end": 122.528
+        },
+        {
+          "id": "caption-word-113-1",
+          "text": "testing",
+          "start": 122.528,
+          "end": 122.948
+        },
+        {
+          "id": "caption-word-113-2",
+          "text": "with",
+          "start": 122.948,
+          "end": 123.288
+        }
+      ]
+    },
+    {
+      "id": "caption-group-114",
+      "frame": 6,
+      "start": 123.288,
+      "end": 123.728,
+      "text": "the people",
+      "words": [
+        {
+          "id": "caption-word-114-0",
+          "text": "the",
+          "start": 123.288,
+          "end": 123.408
+        },
+        {
+          "id": "caption-word-114-1",
+          "text": "people",
+          "start": 123.408,
+          "end": 123.728
+        }
+      ]
+    },
+    {
+      "id": "caption-group-115",
+      "frame": 6,
+      "start": 123.728,
+      "end": 124.148,
+      "text": "who need",
+      "words": [
+        {
+          "id": "caption-word-115-0",
+          "text": "who",
+          "start": 123.728,
+          "end": 123.948
+        },
+        {
+          "id": "caption-word-115-1",
+          "text": "need",
+          "start": 123.948,
+          "end": 124.148
+        }
+      ]
+    },
+    {
+      "id": "caption-group-116",
+      "frame": 6,
+      "start": 124.148,
+      "end": 125.168,
+      "text": "it comes next.",
+      "words": [
+        {
+          "id": "caption-word-116-0",
+          "text": "it",
+          "start": 124.148,
+          "end": 124.288
+        },
+        {
+          "id": "caption-word-116-1",
+          "text": "comes",
+          "start": 124.288,
+          "end": 124.488
+        },
+        {
+          "id": "caption-word-116-2",
+          "text": "next.",
+          "start": 124.488,
+          "end": 125.048
+        }
+      ]
+    },
+    {
+      "id": "caption-group-117",
+      "frame": 6,
+      "start": 126.048,
+      "end": 126.168,
+      "text": "Explore,",
+      "words": [
+        {
+          "id": "caption-word-117-0",
+          "text": "Explore,",
+          "start": 126.048,
+          "end": 126.048
+        }
+      ]
+    },
+    {
+      "id": "caption-group-118",
+      "frame": 6,
+      "start": 126.288,
+      "end": 126.528,
+      "text": "Reach,",
+      "words": [
+        {
+          "id": "caption-word-118-0",
+          "text": "Reach,",
+          "start": 126.288,
+          "end": 126.408
+        }
+      ]
+    },
+    {
+      "id": "caption-group-119",
+      "frame": 6,
+      "start": 126.888,
+      "end": 127.628,
+      "text": "adapt it,",
+      "words": [
+        {
+          "id": "caption-word-119-0",
+          "text": "adapt",
+          "start": 126.888,
+          "end": 127.088
+        },
+        {
+          "id": "caption-word-119-1",
+          "text": "it,",
+          "start": 127.088,
+          "end": 127.508
+        }
+      ]
+    },
+    {
+      "id": "caption-group-120",
+      "frame": 6,
+      "start": 127.708,
+      "end": 128.048,
+      "text": "and help",
+      "words": [
+        {
+          "id": "caption-word-120-0",
+          "text": "and",
+          "start": 127.708,
+          "end": 127.868
+        },
+        {
+          "id": "caption-word-120-1",
+          "text": "help",
+          "start": 127.868,
+          "end": 128.048
+        }
+      ]
+    },
+    {
+      "id": "caption-group-121",
+      "frame": 6,
+      "start": 128.048,
+      "end": 129.568,
+      "text": "make communication easier",
+      "words": [
+        {
+          "id": "caption-word-121-0",
+          "text": "make",
+          "start": 128.048,
+          "end": 128.308
+        },
+        {
+          "id": "caption-word-121-1",
+          "text": "communication",
+          "start": 128.308,
+          "end": 128.928
+        },
+        {
+          "id": "caption-word-121-2",
+          "text": "easier",
+          "start": 128.928,
+          "end": 129.568
+        }
+      ]
+    },
+    {
+      "id": "caption-group-122",
+      "frame": 6,
+      "start": 129.568,
+      "end": 130.248,
+      "text": "to access.",
+      "words": [
+        {
+          "id": "caption-word-122-0",
+          "text": "to",
+          "start": 129.568,
+          "end": 129.848
+        },
+        {
+          "id": "caption-word-122-1",
+          "text": "access.",
+          "start": 129.848,
+          "end": 130.128
+        }
+      ]
+    }
+  ]
+}

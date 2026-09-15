@@ -6,17 +6,21 @@ The software is free. A compatible computer or tablet, camera, suitable position
 
 ## Open it
 
-On this computer, open **http://localhost:4173** while the preview server is running. This is a local preview, not a public deployment.
+Source: **https://github.com/Perfectz/reach-aac**. The repository is public; the commands below run a local copy at **http://localhost:4173**. Publishing source does not itself host the website.
 
 To start it again on Windows, double-click **Start-Reach.cmd**. Node.js 20.19+ or 22.12+ is required for local development/hosting. End users of a hosted copy only need a browser.
 
 ```sh
+git clone https://github.com/Perfectz/reach-aac.git
+cd reach-aac
 npm ci
 npm run build
 node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strictPort
 ```
 
 For development: `npm run dev`. The development server does not install the offline board; use the production build and preview to test offline operation.
+
+The [narrated HyperFrames introduction](videos/reach-hands/README.md) shows the hand workflow, compares other setups and their costs, and explains the project's approach to AI-assisted development. See [CONTRIBUTING.md](CONTRIBUTING.md) to help test or improve Reach.
 
 ## Start with hand movement
 
