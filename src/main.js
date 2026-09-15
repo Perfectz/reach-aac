@@ -1,3 +1,4 @@
+import {assetPath} from './asset-path.js';
 import { createIcons, AudioLines, ShieldCheck, SlidersHorizontal, Sprout, CircleHelp, ArrowUpRight, BellRing, MessageCircle, Volume2, X, Hand, Pause, ChevronRight, Circle, CircleDot, Download, Check, LayoutGrid, HeartPulse, Accessibility, Wind, Bath, Sun, Snowflake, Moon, HeartHandshake, Users, Heart, Droplets, Utensils, Droplet, Bed, Lamp, VolumeX, CircleUser, Footprints, Activity, Smile, Frown, Cloud, Zap, ThumbsUp, User, Coffee, Ear, MapPin, Clock, Repeat, Bookmark, MessagesSquare, ArrowRight, Upload, Printer, Plus, Trash2, MousePointer2, Timer, Camera, Focus } from 'lucide';
 const icons={ AudioLines, ShieldCheck, SlidersHorizontal, Sprout, CircleHelp, ArrowUpRight, BellRing, MessageCircle, Volume2, X, Hand, Pause, ChevronRight, Circle, CircleDot, Download, Check, LayoutGrid, HeartPulse, Accessibility, Wind, Bath, Sun, Snowflake, Moon, HeartHandshake, Users, Heart, Droplets, Utensils, Droplet, Bed, Lamp, VolumeX, CircleUser, Footprints, Activity, Smile, Frown, Cloud, Zap, ThumbsUp, User, Coffee, Ear, MapPin, Clock, Repeat, Bookmark, MessagesSquare, ArrowRight, Upload, Printer, Plus, Trash2, MousePointer2, Timer, Camera, Focus };
 import { categories, helpPhrase, scenarioPhrases } from './data.js';
@@ -693,10 +694,10 @@ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installProm
 $('#install').onclick=async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;$('#install').hidden=true;}};
 async function updateOffline(){
   offlineReady=false;
-  try{if(navigator.serviceWorker?.controller){const response=await caches.match('/offline-manifest.json');if(response){const manifest=await response.json(),cache=await caches.open(manifest.boardCache);offlineReady=(await inspectAssets(cache,manifest.board)).missing.length===0;}}}catch{}
+  try{if(navigator.serviceWorker?.controller){const response=await caches.match(assetPath('/offline-manifest.json'));if(response){const manifest=await response.json(),cache=await caches.open(manifest.boardCache);offlineReady=(await inspectAssets(cache,manifest.board)).missing.length===0;}}}catch{}
   $('#offline-status').textContent=offlineReady?(navigator.onLine?t('saved'):t('offline')):(navigator.onLine?'Preparing offline access':'Offline · some features may be unavailable');
 }
-if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const registration=await navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'});registration.update().catch(()=>{});await navigator.serviceWorker.ready;await updateOffline();}catch{$('#offline-status').textContent='Offline installation unavailable';}});navigator.serviceWorker.addEventListener('message',updateOffline);}
+if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const registration=await navigator.serviceWorker.register(assetPath('/sw.js'),{updateViaCache:'none'});registration.update().catch(()=>{});await navigator.serviceWorker.ready;await updateOffline();}catch{$('#offline-status').textContent='Offline installation unavailable';}});navigator.serviceWorker.addEventListener('message',updateOffline);}
 window.addEventListener('online',updateOffline);window.addEventListener('offline',updateOffline);
 if('serviceWorker' in navigator){
   const alreadyControlled=!!navigator.serviceWorker.controller;

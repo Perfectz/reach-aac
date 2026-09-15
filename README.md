@@ -6,7 +6,9 @@ The software is free. A compatible computer or tablet, camera, suitable position
 
 ## Open it
 
-Source: **https://github.com/Perfectz/reach-aac**. The repository is public; the commands below run a local copy at **http://localhost:4173**. Publishing source does not itself host the website.
+**[Open Reach in your browser](https://perfectz.github.io/reach-aac/)** — no account, extension or installation required. Camera access starts only when you choose Start camera and grant browser permission.
+
+[Public source code](https://github.com/Perfectz/reach-aac). The commands below run a local copy at **http://localhost:4173**.
 
 To start it again on Windows, double-click **Start-Reach.cmd**. Node.js 20.19+ or 22.12+ is required for local development/hosting. End users of a hosted copy only need a browser.
 
@@ -19,6 +21,8 @@ node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strict
 ```
 
 For development: `npm run dev`. The development server does not install the offline board; use the production build and preview to test offline operation.
+
+GitHub Actions builds and publishes `main` to GitHub Pages. `REACH_BASE_PATH=/reach-aac/` sets the deployed prefix for app assets, camera models and the scoped offline cache. Omit it when hosting at a domain root. `node tests/deployment.mjs` checks a prefixed build on port 4175; set `REACH_TEST_URL` to test another hosted copy. The camera test uses synthetic video while loading the real MediaPipe model.
 
 The [narrated HyperFrames introduction](videos/reach-hands/README.md) shows the hand workflow, compares other setups and their costs, and explains the project's approach to AI-assisted development. See [CONTRIBUTING.md](CONTRIBUTING.md) to help test or improve Reach.
 

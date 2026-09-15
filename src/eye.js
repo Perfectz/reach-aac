@@ -1,3 +1,4 @@
+import {assetPath} from './asset-path.js';
 import {eyeFeatures,trainGaze,validationPass,goodCheck,steadySamples} from './gaze-math.js';
 import {ui} from './languages.js';
 const trainTargets=[[.5,.5],[.25,.25],[.75,.25],[.75,.75],[.25,.75]];
@@ -43,8 +44,8 @@ export class EyeInput{
       if(generation!==this.generation){stream.getTracks().forEach(t=>t.stop());return;}
       this.stream=stream;this.video=dialog.querySelector('video');this.video.srcObject=stream;await this.video.play();
       const {FilesetResolver,FaceLandmarker}=await import('@mediapipe/tasks-vision');
-      const files=await FilesetResolver.forVisionTasks('/tracking');
-      const model=await FaceLandmarker.createFromOptions(files,{baseOptions:{modelAssetPath:'/tracking/face_landmarker.task'},runningMode:'VIDEO',numFaces:1,outputFaceBlendshapes:true,minFaceDetectionConfidence:.65,minFacePresenceConfidence:.65,minTrackingConfidence:.65});
+      const files=await FilesetResolver.forVisionTasks(assetPath('/tracking'));
+      const model=await FaceLandmarker.createFromOptions(files,{baseOptions:{modelAssetPath:assetPath('/tracking/face_landmarker.task')},runningMode:'VIDEO',numFaces:1,outputFaceBlendshapes:true,minFaceDetectionConfidence:.65,minFacePresenceConfidence:.65,minTrackingConfidence:.65});
       if(generation!==this.generation){model.close();return;}
       this.model=model;this.running=true;this.phase='idle';this.lastTime=-1;this.lastFrameAt=performance.now();this.lastTick=0;this.dimensions=[innerWidth,innerHeight];
       this.message(ui('eyeComfort',this.language));dialog.querySelector('#eye-begin').disabled=false;this.tick();

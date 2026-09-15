@@ -1,0 +1,43 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+import {mkdir} from 'node:fs/promises';
+const target=process.env.REACH_TEST_URL||'http://127.0.0.1:4175/reach-aac/';
+const base=new URL(target).pathname;
+await mkdir('artifacts',{recursive:true});
+const browser=await chromium.launch({channel:'msedge',headless:true,args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
+try{
+ const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['camera']});
+ await context.addInitScript(()=>{navigator.mediaDevices.getUserMedia=async()=>{const c=document.createElement('canvas');c.width=640;c.height=480;c.getContext('2d').fillRect(0,0,640,480);return c.captureStream(20);};});
+ const page=await context.newPage(),errors=[],bad=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ page.on('response',r=>{if(r.status()>=400)bad.push(r.url()+':'+r.status());});
+ await page.goto(target);
+ console.log('Loaded',target);
+ await page.locator('#welcome-touch').click();
+ assert.equal(await page.locator('.tile').count(),12);
+ await page.locator('[data-phrase=yes]').click();assert.equal(await page.locator('#message').innerText(),'Yes');
+ await page.waitForFunction(()=>!!navigator.serviceWorker.controller,{},{timeout:60000});
+ const state=await page.evaluate(async base=>{
+  const m=await(await fetch(base+'offline-manifest.json')).json();
+  for(const a of [...m.board,...m.tracking])if(!a.url.startsWith(base))throw Error('Unscoped asset '+a.url);
+  const reg=await navigator.serviceWorker.ready;
+  const webmanifest=await(await fetch(base+'manifest.webmanifest')).json();
+  return {scope:new URL(reg.scope).pathname,board:m.board.length,tracking:m.tracking.length,start:webmanifest.start_url};
+ },base);
+ assert.equal(state.scope,base);assert.equal(state.start,'./');assert.ok(state.board>0&&state.tracking>0);
+ console.log('Verified deployment asset paths and offline installation');
+ await page.locator('#hand-shortcut').click();await page.locator('#camera-start').click();
+ await page.waitForFunction(()=>document.querySelector('#camera-status')?.textContent.includes('Show your hand'),{},{timeout:90000});
+ await page.locator('#camera-stop').click();await page.locator('#input-done').click();
+ console.log('Real MediaPipe hand model initialized');
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(500);
+ assert.equal(await page.locator('.tile').count(),4);
+ await page.screenshot({path:'artifacts/deployment-phone.png'});
+ await context.setOffline(true);await page.reload();await page.locator('[data-phrase=no]').click();
+ assert.equal(await page.locator('#message').innerText(),'No');
+ await page.locator('#hand-shortcut').click();await page.locator('#camera-start').click();
+ await page.waitForFunction(()=>document.querySelector('#camera-status')?.textContent.includes('Show your hand'),{},{timeout:90000});
+ await page.locator('#camera-stop').click();
+ assert.deepEqual(errors,[]);assert.deepEqual(bad,[]);
+ console.log('PASS deployment: board, 12/4 tiles, scoped service worker/assets, actual hand model online + offline, offline communication; camera uses synthetic video',target,state);
+}finally{await browser.close();}

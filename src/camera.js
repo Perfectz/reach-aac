@@ -1,3 +1,4 @@
+import {assetPath} from './asset-path.js';
 import { MotionGate, mapHand } from './access.js';
 import {ui} from './languages.js';
 
@@ -27,8 +28,8 @@ export class CameraInput {
       if (mode === 'hand') {
         this.status(ui('cameraPreparing',settings.language));
         const {FilesetResolver,HandLandmarker} = await import('@mediapipe/tasks-vision');
-        const vision = await FilesetResolver.forVisionTasks('/tracking');
-        const model = await HandLandmarker.createFromOptions(vision,{baseOptions:{modelAssetPath:'/tracking/hand_landmarker.task'},runningMode:'VIDEO',numHands:1,minHandDetectionConfidence:0.65,minHandPresenceConfidence:0.65,minTrackingConfidence:0.65});
+        const vision = await FilesetResolver.forVisionTasks(assetPath('/tracking'));
+        const model = await HandLandmarker.createFromOptions(vision,{baseOptions:{modelAssetPath:assetPath('/tracking/hand_landmarker.task')},runningMode:'VIDEO',numHands:1,minHandDetectionConfidence:0.65,minHandPresenceConfidence:0.65,minTrackingConfidence:0.65});
         if (generation !== this.generation) { model.close(); return; }
         this.model = model;
       }

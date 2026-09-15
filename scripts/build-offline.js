@@ -1,19 +1,22 @@
 import {readdir,writeFile,readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
-async function walk(dir){const out=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())out.push(...await walk(p));else out.push('/'+p.replaceAll('\\','/').replace(/^dist\//,''));}return out;}
-const files=(await walk('dist')).filter(p=>!['/sw.js','/offline-manifest.json'].includes(p));
-const records=await Promise.all(files.map(async url=>{const bytes=await readFile('dist'+url);return {url,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};}));
-const board=records.filter(a=>!a.url.startsWith('/tracking/')),tracking=records.filter(a=>a.url.startsWith('/tracking/'));
+const base=process.env.REACH_BASE_PATH||'/';
+if(!/^\/(?:[\w-]+\/)*$/.test(base))throw Error('REACH_BASE_PATH must be / or a path such as /reach-aac/');
+const at=p=>base+p.replace(/^\//,'');
+async function walk(dir){const out=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())out.push(...await walk(p));else out.push(p.replaceAll('\\','/').replace(/^dist\//,''));}return out;}
+const files=(await walk('dist')).filter(p=>!['sw.js','offline-manifest.json'].includes(p));
+const records=await Promise.all(files.map(async file=>{const bytes=await readFile(path.join('dist',file));return {url:at(file),bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};}));
+const board=records.filter(a=>!a.url.startsWith(at('tracking/'))),tracking=records.filter(a=>a.url.startsWith(at('tracking/')));
 const revision=list=>createHash('sha256').update(JSON.stringify(list)).digest('hex').slice(0,12);
-const boardCache='reach-board-'+revision(board),trackingCache='reach-camera-'+revision(tracking);
+const prefix=base==='/'?'reach-':'reach-'+createHash('sha256').update(base).digest('hex').slice(0,8)+'-';
+const boardCache=prefix+'board-'+revision(board),trackingCache=prefix+'camera-'+revision(tracking);
 await writeFile('dist/offline-manifest.json',JSON.stringify({version:1,boardCache,trackingCache,board,tracking}));
-const assets=[...board.map(a=>a.url),'/offline-manifest.json'];
-await writeFile('dist/sw.js',`const CACHE=${JSON.stringify(boardCache)},TRACKING=${JSON.stringify(trackingCache)};
+const assets=[...board.map(a=>a.url),at('offline-manifest.json')];
+await writeFile('dist/sw.js',`const CACHE=${JSON.stringify(boardCache)},TRACKING=${JSON.stringify(trackingCache)},PREFIX=${JSON.stringify(prefix)},BASE=${JSON.stringify(base)};
 const ASSETS=${JSON.stringify(assets)};
-self.addEventListener('install',event=>event.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(ASSETS);await c.put('/',await c.match('/index.html'));await c.put('/offline-ready',new Response('ready'));self.skipWaiting();})()));
-self.addEventListener('activate',event=>event.waitUntil((async()=>{await self.clients.claim();for(const key of await caches.keys())if(key.startsWith('reach-')&&key!==CACHE&&key!==TRACKING)await caches.delete(key);for(const client of await self.clients.matchAll())client.postMessage('offline-ready');})()));
-self.addEventListener('fetch',event=>{if(event.request.method!=='GET'||new URL(event.request.url).origin!==self.location.origin)return;event.respondWith((async()=>{const pathname=new URL(event.request.url).pathname,c=await caches.open(pathname.startsWith('/tracking/')?TRACKING:CACHE);if(event.request.mode==='navigate'){try{const response=await fetch(event.request,{cache:'no-store'});if(response.ok)return response;}catch{}return await c.match('/index.html');}const cached=await c.match(event.request,{ignoreVary:true});if(cached&&event.request.cache!=='reload')return cached;const response=await fetch(event.request);if(response.ok&&pathname.startsWith('/tracking/'))await c.put(event.request,response.clone());return response;})());});
+self.addEventListener('install',event=>event.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(ASSETS);await c.put(BASE,await c.match(BASE+'index.html'));await c.put(BASE+'offline-ready',new Response('ready'));self.skipWaiting();})()));
+self.addEventListener('activate',event=>event.waitUntil((async()=>{await self.clients.claim();for(const key of await caches.keys())if((key.startsWith(PREFIX+'board-')||key.startsWith(PREFIX+'camera-'))&&key!==CACHE&&key!==TRACKING)await caches.delete(key);for(const client of await self.clients.matchAll())client.postMessage('offline-ready');})()));
+self.addEventListener('fetch',event=>{const url=new URL(event.request.url);if(event.request.method!=='GET'||url.origin!==self.location.origin||!url.pathname.startsWith(BASE))return;event.respondWith((async()=>{const pathname=url.pathname,c=await caches.open(pathname.startsWith(BASE+'tracking/')?TRACKING:CACHE);if(event.request.mode==='navigate'){try{const response=await fetch(event.request,{cache:'no-store'});if(response.ok)return response;}catch{}return await c.match(BASE+'index.html');}const cached=await c.match(event.request,{ignoreVary:true});if(cached&&event.request.cache!=='reload')return cached;const response=await fetch(event.request);if(response.ok&&pathname.startsWith(BASE+'tracking/'))await c.put(event.request,response.clone());return response;})());});
 `);
-console.log('Offline board: '+assets.length+' files. Camera downloads survive app-only updates.');
-
+console.log('Offline board: '+assets.length+' files under '+base+'. Camera downloads survive app-only updates.');

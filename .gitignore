@@ -18,3 +18,4 @@ videos/**/audio_request.json
 __pycache__/
 videos/**/.thumbnails/
 videos/**/.waveform-cache/
+.vercel/
